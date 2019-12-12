@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Type here:"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Open"
+        app:layout_constraintStart_toEndOf="@+id/close"
+        app:layout_constraintTop_toBottomOf="@+id/label" />
+
+    <Button
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Close"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label" />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/close"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/cButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C" />
+
+        <Button
+            android:id="@+id/dButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D" />
+
+        <Button
+            android:id="@+id/eButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E" />
+
+        <Button
+            android:id="@+id/fButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="F" />
+
+        <Button
+            android:id="@+id/gButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="G" />
+
+        <Button
+            android:id="@+id/aButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A" />
+
+        <Button
+            android:id="@+id/bButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B" />
+
+        <Button
+            android:id="@+id/c2Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C2" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
